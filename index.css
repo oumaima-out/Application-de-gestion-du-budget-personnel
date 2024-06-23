@@ -1,0 +1,165 @@
+header {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  /*pour aligner les elts de header horiz*/
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 20px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#log {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 50px;
+}
+
+figure img {
+  display: inline;
+}
+
+.img1 {
+  margin-left: 50px;
+  width: 100px;
+  height: 60px;
+}
+
+.img2 {
+  margin-top: 5px;
+  width: 150px;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav li {
+  margin-top: 10px;
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  list-style: none;
+  border-color: black;
+  border-radius: 1em;
+}
+
+nav li:hover {
+  background-color: rgb(192, 153, 115)
+}
+
+nav li a,
+.boutton3 a {
+  color: rgb(0, 0, 0);
+  line-height: 35px;
+  font-size: 18px;
+}
+
+nav li a:hover,
+.boutton3 a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+.boutton1,
+.boutton2 {
+  margin-left: 5px;
+  border-radius: 10px;
+  border-color: grey;
+  color: black;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.boutton2 {
+  background-color: rgb(192, 153, 115);
+
+}
+
+.img3 {
+  width: 140%;
+  height: 400px;
+
+}
+
+.boutton3 {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 1em;
+  background-color: rgb(255, 255, 255);
+}
+
+.boutton3:hover {
+  background-color: rgb(192, 153, 115);
+}
+
+.brown-line {
+  width: 100%;
+  border: none;
+  height: 10px;
+  background-color: rgb(232, 213, 191);
+  position: absolute;
+  bottom: -80px;
+
+  left: 0;
+}
+
+#r {
+  padding: 80px;
+}
+
+#d {
+  padding: 80px;
+}
+
+.img4 {
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+#r div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#f div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+td {
+  text-align: left;
+  /* Centre le contenu horizontalement */
+  vertical-align: middle;
+  /* Centre le contenu verticalement */
+}
+
+#dev,
+#help {
+  background-color: rgb(232, 213, 191);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+}

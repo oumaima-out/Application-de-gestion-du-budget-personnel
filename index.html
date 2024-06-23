@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"
+        href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <title>Page principale</title>
+</head>
+
+<body>
+    <header id="home">
+        <div style="display:inline;">
+        <img class="img1" src="p_logo.png">
+        <img style="width:150px; height:50px;" src="text.png">
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#dev">DEVELOPPERS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#help">HELP</a></li>
+            </ul>
+        </nav>
+        <div id="log">
+            <button type="boutton" class="boutton1" onclick="redirectToLoginPage()">Log In</button>
+            <button type="boutton" class="boutton2" onclick="redirectToinscriPage()">Sign Up</a></button>
+        </div>
+    </header>
+
+
+    <div
+        style="width: 90%; margin: 50px; ;display: flex; height: 590px;padding:20px;">
+        <div class="div2" style="flex: 1; padding-top:20px;padding-left:150px;">
+            <P style="font-size: 60px;font-weight:bold; color:black;">TAKE <br> <span
+                    style="background-color: rgb(225, 189, 7);"> CONTROL</span><br>OF YOUR<br> <span
+                    style="background-color: rgb(192, 153, 115);"> FINANCES</span></P>
+            <button type="button" class="boutton3"><a href="#about">Learn more</a></button>
+        </div>
+        <div style="position: relative; right:180px;padding-top:30px;">
+            <img class="img3" src="principale.png">
+        </div>
+    </div>
+
+
+
+    <div style="clear: both;"></div>
+
+    <hr class="brown-line">
+    <div style="clear: both;"></div>
+    <table>
+        <tr id="about">
+            <td id="r">
+                <div style="margin-left:80px; width:300px;">
+                    <h3>Why Choose Our Application?</h3><br>
+                    <p style="font-size:16px;">Managing personal finances is essential for maintaining financial
+                        stability and achieving financial goals.
+                        Our personal budget management application is designed to help you
+                        take control of your finances in a simple and effective way.</p>
+                </div>
+            </td>
+            <td id="f" style="float:right;margin:70px;margin-right:280px;margin-top:150px;"><img class="img4" src="home.png"></td>
+        </tr>
+        <tr id="dev">
+            <td id="r">
+                <div>
+                    <img src="dev.png " alt="dev" style="width:250px;height:250px; margin-left:100px;">
+                </div>
+
+            </td>
+            <td id="f">
+                <h3>Meet Our Talented Developers</h3> <br>
+                <p style="font-size:16px;width:500px;" >At our personal budget management application, we have a team of
+                    skilled and dedicated developers who have worked tirelessly to bring
+                    you an exceptional user experience.</p>
+                <br>
+                <p style="font-weight:bold">- Oumaima OUTCHAKOUCHT<br>- Rania BELMIR<br>- Ilyas SEKAT</p>
+            </td>
+        </tr>
+        <tr id="contact">
+            <td id="r">
+                <div style="margin-left:100px;">
+                    <h3>Contact Us</h3> <br>
+                    <p style="font-size:16px;">We value your feedback and are always here to assist you. If you have
+                        any questions, suggestions, or concerns regarding our personal budget
+                        management application, please don't hesitate to reach out to us.</p>
+                    <hr>
+                    <p style="font-size:16px; font-weight:bold;">- oumaimaoutchakoucht@gmail.com<br>- belmir.rania@gmail.com</p>
+                </div>
+            </td>
+            <td id="f">
+                <img src="email.png" alt="email" style="width:350px; height:250px;margin-left:150px;">
+            </td>
+        </tr>
+        <tr id="help">
+            <td id="r">
+                <img src="help.png" alt="help" style="width:170px;height:170px;margin-left:100px;">
+            </td>
+            <td id="f">
+                <div style="width:500px;">
+                    <h3>Help</h3><br>
+                    <p style="font-size:16px;">We understand that navigating a new application can sometimes
+                        be challenging. That's why we've created comprehensive resources
+                        to help you make the most of our personal budget management application.
+                        Whether you have a specific question or need assistance with a particular feature,
+                        we're here to support you every step of the way.</p>
+                        <hr> <p style="font-size:16px;"><a href="" style="text-decoration: none;">FAQ</a></p>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <footer style="height: 40px;width:100%;">
+        <p
+            style="border: 1px solid rgb(245, 241, 241) ; background-color: rgb(245, 241, 241); height: 40px; text-align: right;">
+            Copyright @EHTP/1GI-2023</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = "view/login.html";
+        }
+        function redirectToinscriPage() {
+            window.location.href = "view/inscription.html";
+        }
+    </script>
+</body>
+
+</html>
