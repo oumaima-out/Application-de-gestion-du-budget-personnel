@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .container {
+            width: 550px;
+            height: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        form:not(#check) {
+            padding: 50px;
+            margin: auto;
+            border: 1px solid rgb(243, 240, 240);
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgba(225, 208, 199, 0.804);
+        }
+
+        .other input {
+            display: block;
+            width: 100%;
+
+
+        }
+
+        input {
+            box-sizing: border-box;
+            position: relative;
+            font-size: 17px;
+        }
+
+        .other input:not(#check) {
+            margin-bottom: 10px;
+            height: 50px;
+        }
+
+        .firstRow,
+        .secondRow {
+            display: flex;
+        }
+
+        .firstRow input,
+        .secondRow input:last-child {
+            margin-bottom: 10px;
+            height: 50px;
+            flex: 1;
+            position: relative;
+        }
+
+        .secondRow input {
+            margin-bottom: 10px;
+            height: 50px;
+            position: relative;
+        }
+
+        .firstRow input:first-child,
+        .secondRow input:first-child {
+            margin-right: 10px;
+        }
+
+        input::placeholder {
+            font-size: 17px;
+        }
+
+
+        button {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(97, 69, 53);
+            border-radius: 20px;
+        }
+
+        .box {
+            display: flex;
+            margin: auto;
+        }
+
+        #check {
+            float: left;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin-bottom: -90px;
+        }
+
+        #gender option {
+            font-size: 17px;
+            color: black;
+        }
+
+        .secondRow select:valid {
+            color: black;
+        }
+
+        .secondRow select {
+            margin-bottom: 10px;
+            flex-grow: 1;
+            position: relative;
+            font-size: 17px;
+            color: rgb(110, 110, 110);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="logo" style="margin-bottom:0px; width:180px; height:180px; margin-top:20px;">
+        <p style="color: rgb(6, 6, 6); font-weight: bold; font-size: 30px">Welcome! <span
+                style="color:rgb(97, 69, 53); ">SIGN UP </span>to join us</p>
+    </header>
+    <div class="container">
+        <form action="../controller/userController.php?action=inscription" method="post">
+            <div class="firstRow">
+                <input type="text" name="nom" placeholder="First Name" required>
+                <input type="text" name="prenom" placeholder="Last Name" required>
+            </div>
+            <div class="secondRow">
+                <input type="tel" name="tel" placeholder="Telephone" style="width:70%;" required>
+                <label for="gender"></label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="other">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="pass" placeholder="Password" required>
+                <input type="password" name="passw" placeholder="Confirm password" required>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="check" value="1" id="check" required>
+                <p style="color:rgb(97, 69, 53); font-size:17px; font-weight: bold;">I accept the Terms of Use & Privacy
+                    Policy</p>
+            </div>
+            <p><button type="submit" name="but"><span style="color:white; font-size: 20px; font-weight: bold;">Sign
+                        Up</span></button></p>
+            <br>
+            <hr style="font-weight: bold;">
+            <p style="font-weight: bold; color: rgb(97, 69, 53); text-decoration: none; font-size: 20px; ">Already have
+                an account? </p>
+                <button style="border-color:rgb(97, 69, 53);background-color: white;" onclick="redirectToLoginPage()" type="button"><span
+                    style="color:rgb(97, 69, 53); font-size: 20px; font-weight: bold;">Log in</span></button>
+        </form>
+
+    </div>
+
+    <footer style="height: 40px;width:100%;">
+        <p
+            style="border: 1px solid rgb(245, 241, 241) ; background-color: rgb(245, 241, 241); height: 40px; text-align: right;">
+            Copyright @EHTP/1GI-2023</p>
+    </footer>
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+
+</html>

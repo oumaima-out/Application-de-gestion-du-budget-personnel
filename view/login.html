@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main {
+            width: 470px;
+            height: 650px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 50px;
+            border: 3px solid rgb(244, 240, 240);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .content input {
+            width: 100%;
+            height: 50px;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .content input::placeholder {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .content button {
+            background-color: rgba(41, 17, 5, 0.804);
+            width: 100%;
+            color: white;
+            height: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 25px;
+
+        }
+
+        footer {
+            margin-top: 30px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+
+        img {
+            width: auto;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <img src="logo.png" alt="logo">
+        </header>
+
+        <div class="content" style="width: 370px;">
+            <form action="../controller/userController.php?action=login" method="post">
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" id="a" name="mdp" required>
+                <strong>
+                    <a href="" style="color:rgba(81, 35, 12, 0.804); font-size: 20px; text-align: left;">Password
+                        forgotten?</a>
+                </strong>
+                <br><br><button name="but1" type="submit">Sign in </button>
+                <hr style="width: 40%; display: inline-block; text-align: left; margin-bottom:10px">
+                <p style="display: inline-block; margin: 23px; text-align: start;">or</p>
+                <hr style="width: 40%; display: inline-block; text-align: right; margin-bottom: 10px;">
+                <button name="but2" style="background-color: white; color:rgba(81, 35, 12, 0.804) ; " onclick="redirectToLoginPage()" type="button">Sign up</button>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p
+            style="border: 1px solid rgb(245, 241, 241) ; background-color: rgb(245, 241, 241); height: 40px; text-align: right;">
+            Copyright @EHTP/1GI-2023</p>
+    </footer>
+
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = "inscription.html"; 
+        }
+    </script>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</html>
